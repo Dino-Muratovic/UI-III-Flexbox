@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	border: 0; 
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -27,6 +27,7 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
+	
 }
 body {
 	line-height: 1;
@@ -49,7 +50,9 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	
+	box-sizing: border-box;
+	/* border:1px solid blue; */
 }
 
 html, body {
@@ -63,4 +66,369 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+
+
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/*Navigation bar starts here*/
+
+nav {
+	display:flex;
+	justify-content: space-evenly;
+	align-items: center;	
+	width: 100%;
+	margin-top: 2%;
+	
+}
+
+.navigation-bar {
+	display:flex;
+	width: 60%;
+	justify-content: space-around;	
+}
+
+.navigation-bar a {
+	color:gray;
+}
+
+ a {
+	text-decoration: none;
+}
+
+.navigation-bar a:hover {
+	color:black;
+}
+
+.nav-logo {
+	display: flex;
+	width: 30%;	
+	justify-content: flex-end;	
+	margin-right:5%;
+}
+
+/*hr element*/
+
+hr {
+	border: 1px solid black;
+	width: 90%;
+}
+
+
+
+/*Header starts here*/
+
+header {
+	display: flex;
+	width: 90%;
+	margin: 3% auto;
+	justify-content: space-between;		
+}
+
+.header-left-side {
+	justify-content: flex-start;
+	width: 40%;
+	text-align: center;
+	align-self:center;
+	margin-left:10%;
+}
+
+header h1 {
+	font-size:55px;
+}
+
+.header-left-side button{
+	width:30%;
+	padding:1%;
+	border:1px solid black;
+	background-color:#fff;
+	border-radius: 10px;	
+}
+
+.header-left-side button a {
+	color:black;
+}
+
+.header-left-side button:hover {
+	border-radius:0;
+}
+
+
+
+.header-right-side {
+	display: flex;
+	width: 40%;
+	justify-content: flex-end;	
+	
+}
+
+.header-right-side img {
+	justify-content: flex-end;
+}
+
+
+/*Section one starts here*/
+
+.section-one {
+	display:flex;
+	width:90%;
+	margin:3% auto;
+}
+
+.section-one h3 {
+	font-size:24px;
+	padding:1%;
+}
+
+.section-one p {
+	font-size: 20px;
+	padding:1%;
+}
+
+/*Section two starts here*/
+
+/* .section-two {
+	display:block;
+	width: 90%;
+	margin:1% auto;	
+} */
+
+.section-two {
+	width: 90%;
+	margin:auto;	
+}
+
+.middle-img {		
+	width:100%;	
+}
+
+/*Section three starts here*/
+
+.section-three {
+	display:flex;	
+	width:90%;
+	margin:1% auto;
+	justify-content: space-evenly;
+}
+
+.section-three div {
+   padding:1%;	
+}
+
+.section-three h3 {
+	font-size:24px;
+}
+
+.section-three p {
+	font-size:20px;
+}
+
+
+/*Footer starts here*/
+
+footer {
+	display:flex;
+	flex-direction: column;
+	margin:5% auto;	
+}
+
+footer div {	
+	margin-left:5%;
+	width: 25%;
+	margin-bottom:5%;
+	}
+
+footer h3 {
+	font-size:24px;
+}
+
+.copyright {
+	display: flex;
+	justify-content:center;	
+	font-size: 24px;
+}
+
+footer address {
+	margin-left:5%;
+}
+
+
+
+
+/*Service page starts here*/
+/*Header styling for the 2nd page is the same. Look below*/
+
+/* header {
+	display: flex;
+	width: 90%;
+	margin: 3% auto;
+	justify-content: space-between;		
+}
+
+.header-left-side {
+	justify-content: flex-start;
+	width: 40%;
+	text-align: center;
+	align-self:center;
+	margin-left:10%;
+}
+
+header h1 {
+	font-size:55px;
+}
+
+.header-left-side button{
+	width:30%;
+	padding:1%;
+	border:1px solid black;
+	background-color:#fff;
+	border-radius: 10px;	
+}
+
+.header-left-side button a {
+	color:black;
+}
+
+.header-left-side button:hover {
+	border-radius:0;
+}
+
+
+
+.header-right-side {
+	display: flex;
+	width: 40%;
+	justify-content: flex-end;	
+	
+}
+
+.header-right-side img {
+	justify-content: flex-end;
+} */
+
+
+
+
+/*Services page header / image across*/
+
+.image-container {
+	width: 100%;
+	margin:auto;	
+}
+
+.services-header-img {		
+	width:100%;	
+}
+
+/*Services section*/
+
+.services {
+	display: flex;
+	justify-content: center;
+	width:85%;
+	margin:1% auto;
+}
+
+.services h2 {
+	font-size:24px;
+}
+.services p {
+	font-size: 20px;
+}
+
+
+/*Services cards*/
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	width:100%;
+	justify-content: space-evenly;
+	margin:0 auto;
+}
+
+.cards div {
+	width: 37%;
+	height:40vh;
+	margin:4%;
+	padding:2%;
+	border:2px solid black;
+	background-color:#f2f2f2;
+}
+
+.cards h3{
+	font-size:24px;
+	}
+
+.cards p {
+	font-size: 20px;
+	padding:2%;
+	margin-top: 7%;	
+	}
+
+.cards button {
+	margin-top: 10%;
+	width:30%;
+	padding:1%;
+	border:1px solid black;
+	background-color:#fff;	
+	border-radius: 5px;
+}
+
+.cards a {
+	color:black;
+}
+
+
+/*Some facts about our services section starts here*/
+
+.facts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width: 100%;
+	margin:0% auto;
+	
+}
+
+.facts div {
+	width: 41%;
+	height:57vh;
+	margin:4%;
+	padding:2%;
+	
+	}
+
+.services-info-img {
+	align-content: center;
+	width: 100%;
+}
+
+.facts h3{
+	font-size:24px;
+}
+
+.facts p {
+	font-size:20px;
+	margin-top:10%; 
+	
+	
+}
+
+.facts ul {
+	font-size:20px;
+	margin-top:15%; 
+	list-style-type: circle;
+	margin:4%;
+}
+
+/*Footer starts here*/
+
+footer {
+	text-align:center;
+	font-size: 24px;	
+}
+
+
+
+
+
